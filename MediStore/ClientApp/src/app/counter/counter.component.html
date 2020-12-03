@@ -1,25 +1,25 @@
 <h1>Add Medicine </h1>
 
 <mat-label>Full Name</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
+  <input matInput type="text">
 
   <mat-label>Brand</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
+  <input matInput type="text" >
 
   <mat-label>Price</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
+  <input matInput type="text" >
 
   <mat-label>Quantity</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
+  <input matInput type="text" >
 
   <mat-label>Expiry Date</mat-label>
   <input matInput [matDatepicker]="picker">
   <mat-datepicker #picker></mat-datepicker>
 
   <mat-label>Notes</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
+  <input matInput type="text" >
 
   
   <div>
-    <a routerLink="/"><button mat-button  matSuffix mat-icon-button aria-label="Clear" (click)="value=''">Save</button></a>
+    <a routerLink="/"><button mat-button  matSuffix mat-icon-button aria-label="Clear" >Save</button></a>
   </div>
