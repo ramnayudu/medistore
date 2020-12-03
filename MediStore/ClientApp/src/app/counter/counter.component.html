@@ -1,7 +1,25 @@
-<h1>Counter</h1>
+<h1>Add Medicine </h1>
 
-<p>This is a simple example of an Angular component.</p>
+<mat-label>Full Name</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
 
-<p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
+  <mat-label>Brand</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
 
-<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+  <mat-label>Price</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+
+  <mat-label>Quantity</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+
+  <mat-label>Expiry Date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker #picker></mat-datepicker>
+
+  <mat-label>Notes</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+
+  
+  <div>
+    <a routerLink="/"><button mat-button  matSuffix mat-icon-button aria-label="Clear" (click)="value=''">Save</button></a>
+  </div>

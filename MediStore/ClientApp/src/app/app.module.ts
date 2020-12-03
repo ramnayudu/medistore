@@ -36,7 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      // { path: 'counter', component: CounterComponent },
+      { path: 'add', component: CounterComponent },
       // { path: 'fetch-data', component: FetchDataComponent },
     ]),
     BrowserAnimationsModule,
